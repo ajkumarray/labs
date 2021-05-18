@@ -1,4 +1,4 @@
-//  DoA Assignment1     binarySearch using Divide and conquer
+//  DoA Assignment3     quickSort using Divide and conquer
 //  Created by Ajit Kumar on May16//2021 AD.
 //  Copyright © 2021 Ajit Kumar. All rights reserved.
 

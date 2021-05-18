@@ -9,19 +9,22 @@ int main(int argc, const char * argv[]) {
     int n;
     printf("Enter number of elements: ");
     scanf("%d",&n);
+    
     int ray[n];
     printf("Enter elements: ");
     for(int i = 0; i < n; i++)
         scanf("%d",&ray[i]);
+    
     int min = INT_MAX;
     int max = INT_MIN;
     for(int i = 0; i < n; i++)
     {
-        if(ray[i] < min)
+        if(ray[i] < min)            //checking for minimum
             min = ray[i];
-        if(ray[i] > max)
+        if(ray[i] > max)            //checking for maximum
             max = ray[i];
     }
+    
     printf("The maximum element of array: %d\nThe minimum element of array: %d\n",max,min);
     return 0;
 }

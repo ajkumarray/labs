@@ -1,4 +1,4 @@
-//  DoA Assignment1     binarySearch using Divide and conquer
+//  DoA Assignment2     binarySearch using Divide and conquer
 //  Created by Ajit Kumar on May15//2021 AD.
 //  Copyright © 2021 Ajit Kumar. All rights reserved.
 
