@@ -3,18 +3,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct Node
+struct Node     //node definition
 {
     int value, height;
     struct Node *left, *right;
 };
 
-int max(int a, int b)
+int max(int a, int b)       //function to get maximum of two numbers
 {
     return (a > b) ? a : b;
 }
 
-int height(struct Node *node)
+int height(struct Node *node)       //function to get the height of the tree
 {
     if(node == NULL)
         return 0;
@@ -22,7 +22,7 @@ int height(struct Node *node)
     return node->height;
 }
 
-struct Node* createNode(int value)
+struct Node* createNode(int value)      //function to point new nodes left and right pointers
 {
     struct Node* node = (struct Node*)malloc(sizeof(struct Node));
     node->value = value;
@@ -32,7 +32,7 @@ struct Node* createNode(int value)
     return node;
 }
 
-struct Node *rightRotate(struct Node *y)
+struct Node *rightRotate(struct Node *y)        //function to right rotate subtree
 {
     struct Node *x = y->left;
     struct Node *T2 = x->right;
@@ -46,7 +46,7 @@ struct Node *rightRotate(struct Node *y)
     return x;
 }
 
-struct Node *leftRotate(struct Node *x)
+struct Node *leftRotate(struct Node *x)     //function to left rotate subtree
 {
     struct Node *y = x->right;
     struct Node *T2 = y->left;
@@ -60,14 +60,14 @@ struct Node *leftRotate(struct Node *x)
     return y;
 }
 
-int getBalance(struct Node *node)
+int getBalance(struct Node *node)       //get balance factor of node
 {
     if(node == NULL)
         return 0;
     return height(node->left) - height(node->right);
 }
 
-struct Node* insert(struct Node* node, int value)
+struct Node* insert(struct Node* node, int value)       //function to insert new nodes
 {
     if(node == NULL)
         return (createNode(value));
@@ -104,7 +104,7 @@ struct Node* insert(struct Node* node, int value)
     return node;
 }
 
-struct Node * minNode(struct Node* node)
+struct Node * minNode(struct Node* node)        //function to find minimum valus node
 {
     struct Node* temp = node;
     while(temp->left != NULL)
@@ -113,7 +113,7 @@ struct Node * minNode(struct Node* node)
     return temp;
 }
 
-struct Node* deleteNode(struct Node* root, int value)
+struct Node* deleteNode(struct Node* root, int value)       //function to delete nodes
 {
     if(root == NULL)
         return root;
@@ -174,7 +174,7 @@ struct Node* deleteNode(struct Node* root, int value)
     return root;
 }
 
-void printPreOrder(struct Node *root)
+void printPreOrder(struct Node *root)       //function to print preorder traversal of the tree
 {
     if(root != NULL)
     {
