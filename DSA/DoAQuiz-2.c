@@ -1,4 +1,4 @@
-//  DoA Assignment11      N Queen Problem using backtracking
+//  DoA Quiz2      4 Queen Problem
 
 #include <stdio.h>
 #include <stdbool.h>
@@ -57,6 +57,7 @@ bool nQueen()
 }
 
 int main(int argc, const char * argv[]) {
+    printf("Solution of 4 Queen problem:\n");
     nQueen();
     return 0;
 }
