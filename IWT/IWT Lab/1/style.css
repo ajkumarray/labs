@@ -1,0 +1,12 @@
+body {
+  align-items: center;
+  text-align: center;
+}
+
+.content {
+  align-items: center;
+  padding: 20px 0;
+  margin: 0 20%;
+  width: 60%;
+  background-color: aqua;
+}

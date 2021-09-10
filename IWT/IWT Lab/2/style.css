@@ -1,0 +1,60 @@
+body {
+  align-items: center;
+  position: relative;
+}
+
+.heading {
+  text-align: center;
+}
+
+.ul1 ul {
+  list-style-type: disc;
+}
+
+.ul1 {
+  position: absolute;
+  background-color: aqua;
+  padding: 10px;
+  margin: 20px;
+  width: 300px;
+  height: 370px;
+}
+
+.ul2 ul {
+  list-style-type: square;
+}
+.ul2 {
+  position: absolute;
+  background-color: cornsilk;
+  padding: 10px;
+  margin: 20px 20px 20px 400px;
+  width: 300px;
+  height: 370px;
+}
+
+.dl1 {
+  position: absolute;
+  background-color: khaki;
+  padding: 10px 40px;
+  margin: 20px 20px 20px 780px;
+  width: 250px;
+  height: 370px;
+}
+
+.ol1 {
+  position: absolute;
+  background-color: floralwhite;
+  padding: 10px;
+  margin: 450px 20px 20px 20px;
+  width: 300px;
+  height: 370px;
+}
+
+.ol2 {
+  position: absolute;
+  background-color: mediumturquoise;
+  padding: 10px;
+  margin: 450px 20px 20px 400px;
+  width: 300px;
+  height: 370px;
+}
