@@ -125,7 +125,7 @@ body {
 .contact {
   position: relative;
   width: 100%;
-  height: 110px;
+  height: 125px;
   background-color: #66bfbf;
   margin: 0;
   padding: 30px;
@@ -134,8 +134,8 @@ body {
 .mail {
   color: rgb(5, 25, 41);
   position: absolute;
-  margin: 0.001% 41.5%;
-  padding: 10px;
+  margin: 0.001% 42%;
+  padding: 0px 0 10px;
 }
 
 .contact-div {
