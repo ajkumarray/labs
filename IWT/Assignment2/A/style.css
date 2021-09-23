@@ -1,0 +1,31 @@
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.table {
+  position: absolute;
+  margin: 5% 10%;
+  width: 30%;
+  font-size: 2.25rem;
+}
+
+.table table {
+  border: 3px solid black;
+}
+
+.input-button {
+  position: absolute;
+  margin: 15% 50%;
+}
+
+.cal-button {
+  font-size: 2rem;
+  border: 2px solid black;
+  border-radius: 12px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  color: black;
+}
