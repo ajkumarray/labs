@@ -1,0 +1,77 @@
+body {
+  background-color: aliceblue;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: monospace;
+}
+
+hr {
+  position: absolute;
+  border: dotted #031f1f 6px;
+  border-bottom: none;
+  width: 4%;
+}
+
+.hr1 {
+  margin: 15% 40%;
+}
+
+.hr2 {
+  margin: 23% 40%;
+}
+
+.top {
+  position: absolute;
+  height: 30px;
+  padding: 10px;
+  margin: 10% 8%;
+}
+
+.middle {
+  position: absolute;
+  height: 50px;
+  padding: 10px;
+  margin: 18% 10%;
+  font-size: 1rem;
+}
+
+.cal-button {
+  position: absolute;
+  margin: 25% 40%;
+  padding: 0;
+}
+.btn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 25;
+  -moz-border-radius: 25;
+  border-radius: 25px;
+  text-shadow: 7px 5px 7px #666666;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 12px 22px 12px 22px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+.div-result {
+  position: absolute;
+  padding: 20px;
+  margin: 33% 7%;
+  font-size: 1.5rem;
+}

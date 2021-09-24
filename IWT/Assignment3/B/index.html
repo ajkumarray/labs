@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 3 | Q2</title>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="top">
+      <h2>
+        Please type the coordinates and click on the button to calculate the
+        distance between them.
+      </h2>
+    </div>
+    <hr class="hr1" />
+    <div class="middle">
+      <div class="input1">
+        Point 1 coordinates: x
+        <input
+          id="x1"
+          value="0"
+          size="7"
+          onblur="javascript:P1.x=parseFloat(this.value)"
+        />, y
+        <input
+          id="y1"
+          value="0"
+          size="7"
+          onblur="javascript:P1.y=parseFloat(this.value)"
+        />
+      </div>
+      <div class="input2">
+        Point 2 coordinates: x
+        <input
+          id="x2"
+          value="0"
+          size="7"
+          onblur="javascript:P2.x=parseFloat(this.value)"
+        />, y
+        <input
+          id="y2"
+          value="0"
+          size="7"
+          onblur="javascript:P2.y=parseFloat(this.value)"
+        />
+      </div>
+    </div>
+    <hr class="hr2" />
+    <div class="cal-button">
+      <button class="btn" onclick="distance()">Calculate</button>
+    </div>
+    <div class="div-result">
+      The distance between two points is: <span id="result"></span>
+    </div>
+  </body>
+</html>
