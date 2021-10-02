@@ -1,0 +1,29 @@
+body {
+  position: relative;
+}
+
+h1 {
+  position: absolute;
+  margin: 5% 20%;
+}
+
+.date {
+  font-size: 1rem;
+  position: absolute;
+  margin: 10% 20%;
+}
+
+.format {
+  font-size: 1rem;
+  position: absolute;
+  margin: 10.3% 35%;
+}
+
+.out {
+  width: 500px;
+  height: 250px;
+  font-size: 1rem;
+  position: absolute;
+  margin: 13% 18%;
+  padding: 20px;
+}

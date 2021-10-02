@@ -1,0 +1,29 @@
+body {
+  position: relative;
+}
+
+h1 {
+  position: absolute;
+  margin: 5% 30%;
+  font-size: 3rem;
+}
+
+p {
+  position: absolute;
+  margin: 12% 30%;
+  width: 150px;
+}
+
+.reload {
+  font-size: 1rem;
+}
+
+.message {
+  position: absolute;
+  margin: 18% 30%;
+}
+
+.table {
+  position: absolute;
+  margin: 25% 40%;
+}

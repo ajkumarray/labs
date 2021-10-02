@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 4 | B</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Search Character</h1>
+    <form action="" class="input">
+      <div>
+        <label for="string1">Enter any String: </label>
+        <input type="text" name="string1" id="string1" />
+      </div>
+      <br />
+      <div>
+        <label for="string2">Enter character to be searched: </label>
+        <input type="text" name="string2" id="string2" />
+      </div>
+      <br />
+      <div>
+        <input type="button" value="Search" onClick="search1()" />
+        <button class="reload" onClick="window.location.reload();">
+          Refresh
+        </button>
+      </div>
+      <br />
+      <label for="search-result">Search Result: </label>
+      <textarea name="result" id="ans" cols="20" rows="2"></textarea>
+    </form>
+  </body>
+</html>

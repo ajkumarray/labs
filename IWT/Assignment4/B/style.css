@@ -1,0 +1,15 @@
+body {
+  position: relative;
+}
+
+h1 {
+  position: absolute;
+  margin: 5% 30%;
+  font-size: 3rem;
+}
+
+.input {
+  position: absolute;
+  margin: 13% 30%;
+  align-items: center;
+}
