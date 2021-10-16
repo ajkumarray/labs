@@ -1,88 +1,62 @@
-#include <iostream>
-#include <string.h>
+//  checksum program
+#include <bits/stdc++.h>
 
 using namespace std;
 
+int sender(int ray[10], int num)
+{
+    cout << "\n\t---Sender---" << endl;
+    int sum = 0;
+    for (int i = 0; i < num; i++)
+        sum += ray[i];
+
+    cout << "Sum is: " << sum << endl;
+
+    int checksum;
+    checksum = ~sum; //  binary comliment of sum is checksum
+    cout << "Checksum is: " << checksum << endl;
+    return checksum;
+}
+
+int receiver(int ray[10], int num, int sCheck)
+{
+    cout << "\n\t---Reciever---" << endl;
+    int sum = 0;
+    for (int i = 0; i < num; i++)
+        sum += ray[i];
+
+    cout << "Sum is: " << sum << endl;
+
+    int checksum;
+    sum = sum + sCheck;
+    checksum = ~sum;
+    cout << "Checksum is: " << checksum << endl;
+    return checksum;
+}
+
 int main()
 {
-    char a[20], b[20];
-    char sum[20], complement[20];
-    int i;
+    int num;
+    cout << "\nEnter number of frames: ";
+    cin >> num;
 
-    cout << "Enter first binary string: ";
-    cin >> a;
-    cout << "Enter second binary string: ";
-    cin >> b;
-
-    if (strlen(a) == strlen(b))
+    int ray[10];
+    cout << "Enter the frames\n"
+         << endl;
+    for (int i = 0; i < num; i++)
     {
-        char carry = '0';
-        int length = strlen(a);
-
-        for (i = length - 1; i >= 0; i--)
-        {
-            if (a[i] == '0' && b[i] == '0' && carry == '0')
-            {
-                sum[i] = '0';
-                carry = '0';
-            }
-            else if (a[i] == '0' && b[i] == '0' && carry == '1')
-            {
-                sum[i] = '1';
-                carry = '0';
-            }
-            else if (a[i] == '0' && b[i] == '1' && carry == '0')
-            {
-                sum[i] = '1';
-                carry = '0';
-            }
-            else if (a[i] == '0' && b[i] == '1' && carry == '1')
-            {
-                sum[i] = '0';
-                carry = '1';
-            }
-            else if (a[i] == '1' && b[i] == '0' && carry == '0')
-            {
-                sum[i] = '1';
-                carry = '0';
-            }
-            else if (a[i] == '1' && b[i] == '0' && carry == '1')
-            {
-                sum[i] = '0';
-                carry = '1';
-            }
-            else if (a[i] == '1' && b[i] == '1' && carry == '0')
-            {
-                sum[i] = '0';
-                carry = '1';
-            }
-            else if (a[i] == '1' && b[i] == '1' && carry == '1')
-            {
-                sum[i] = '1';
-                carry = '1';
-            }
-            else
-                break;
-        }
-        cout << "\nSum = " << carry << sum << endl;
-
-        for (i = 0; i < length; i++)
-        {
-            if (sum[i] == '0')
-                complement[i] = '1';
-            else
-                complement[i] = '0';
-        }
-
-        if (carry == '1')
-            carry = '0';
-        else
-            carry = '1';
-
-        cout << "\nChecksum = " << carry << complement << endl;
+        cout << "Frame " << (i + 1) << " :";
+        cin >> ray[i];
     }
-    else
-        cout << "\nWrong input strings" << endl;
 
+    int sCheck = sender(ray, num);
+    int rCheck = receiver(ray, num, sCheck);
+
+    if (rCheck == 0)
+        cout << "\n\nNo error detectd\n"
+             << endl;
+    else
+        cout << "\n\nError detected\n"
+             << endl;
     return 0;
 }
